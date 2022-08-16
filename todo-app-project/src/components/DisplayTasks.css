@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.blueContainer {
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.taskBoxesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.boxOfTask {
+  margin: 1em;
+  background-color: #cdc2ae;
+  justify-content: center;
+  align-items: center;
+  color: #311d3f;
+  border: #311d3f 3px solid;
+  border-radius: 30px;
+  min-height: 5em;
+  min-width: 12em;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.done {
+  background-color: #c2ded1;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.doneBtn {
+  background-color: #ece5c7;
+}
+
+.notDone {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 766px) {
+  .boxOfTask {
+    min-width: 11rem;
+    min-height: 5em;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  .boxOfTask {
+    min-width: 11rem;
+    min-height: 5em;
+    margin: 0.3em;
+    padding: 0.5em;
+  }
+}
