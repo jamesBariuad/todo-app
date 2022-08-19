@@ -22,7 +22,7 @@ const AddTaskForm = ({tasks,addTask, addTaskToggle}) => {
     if (taskName.length===0){
       alert("task name should not be blank!");
     }else if(checkIfDuplicate.length!==0){
-      alert("added task is a duplicate! try again bitch");
+      alert("added task is a duplicate! try again");
     }else{
       const taskDeets = {
         id: uuidv4(),
